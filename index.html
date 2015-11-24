@@ -11,7 +11,8 @@
  	</style>
 </head>
 <body>
-<h1 class="start">Click Here to create an event</h1>
+<button class="start btn-lg .btn-primary">Add an event</button>
+<button class="showEvents btn-lg .btn-primary">See Active events</button>
 <div class="row">
 	<div class="col-md-3 info">
 		<label for="name">Name</label></br>
@@ -25,7 +26,7 @@
 			<input type="email" id="email" autocomplete="email"></input></br>
 			<input type="password" id="password"></input></br>
 		</form>
-			<button class="forward"></button>
+			<button class="forward btn-lg .btn-primary">Add event info</button>
 	</div>
 	<div class="col-md-3 event">
 		<label for="eventName">Event Name</label></br>
@@ -48,8 +49,12 @@
 			<input type="datetime-local" id="eventEnd"></input></br>
 			<input type="text" id="guestList"></input></br>
 			<input type="adress" id="location"></input></br>
+			<button class="lastOne btn-lg .btn-primary">Submit your event</button>
 	</div>
-		<button class="lastOne"></button>
+	<div class="col-md-12 eventTable">
+		<p>blaaaa</p>
+	</div>
+
 	<div data-bind="html: details" class="col-md-6 content">
 
 	</div>
