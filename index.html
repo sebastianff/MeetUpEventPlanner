@@ -4,9 +4,15 @@
   <title></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
   	<style type="text/css">
   	body{
   		font:30px Oswald;
+  	}
+  	.okvir{
+  		background-color: grey;
+  		margin: 10px;
+  		float: left;
   	}
  	</style>
 </head>
@@ -52,7 +58,8 @@
 			<button class="lastOne btn-lg .btn-primary">Submit your event</button>
 	</div>
 	<div class="col-md-12 eventTable">
-		<p>blaaaa</p>
+		<div class="okvir">
+		</div>
 	</div>
 
 	<div data-bind="html: details" class="col-md-6 content">
