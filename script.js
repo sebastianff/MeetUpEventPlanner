@@ -17,12 +17,8 @@ var getInfo = function(){
 }
 
 var displayChatMessage = function(name,email,eName,eType,start,evEnd){
-	$('.okvir').append('<h1>'+name+'</h1>');
-	$('.okvir').append('<p>'+email+'</p>');
-	$('.okvir').append('<p>'+eName+'</p>');
-	$('.okvir').append('<p>'+eType+'</p>');
-	$('.okvir').append('<p>'+start+'</p>');
-	$('.okvir').append('<p>'+evEnd+'</p>');
+	$('.eventTable').append('<div class="okvir"><h1>'+name+'</h1><p>'+email+'</p><p>'+eName+'</p><p>'+eType+'</p><p>'+start+'</p><p>'+evEnd+'</p></div>'
+		)
 
 }
 
