@@ -2,71 +2,61 @@
 <html>
 <head>
   <title></title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <style type="text/css">
+  	<style type="text/css">
   	body{
   		font:30px Oswald;
   	}
-  	.content{
-  		background-color: red;
-  	}
-  </style>
+ 	</style>
 </head>
 <body>
+<h1 class="start">Click Here to create an event</h1>
 <div class="row">
-	<div class="col-md-3">
-	<form autocomplete="on">
+	<div class="col-md-3 info">
 		<label for="name">Name</label></br>
 		<label for="email">Email</label></br>
 		<label for="password">Password</label></br>
-
-		<label for="eventName">Event Name</label></br>
-
-		<label for="eventType">Event type</label></br>
-
-		<label for="eventStart">Start time</label></br>
-
-		<label for="eventEnd">End time</label></br>
-
-		<label for="guestList">Guests</label></br>
-
-		<label for="location">Location</label></br>
-
 	</form>
 	</div>
-	<div class="col-md-3">
-		<input type="text" id="name" autocomplete="fname" autofocus></input></br>
-		<input type="email" id="email" autocomplete="email"></input></br>
-		<input type="password" id="password"></input></br>
-		<input type="text" id="eventName"></input></br>
-
-
-		<input list="eventType">
-		<datalist id="eventType">
-		  <option value="Party"></option>
-		  <option value="Meeting"></option>
-		  <option value="Birthday"></option>
-		  <option value="Casual"></option>
-		</datalist></br>
-		<input type="datetime-local" id="eventStart"></input></br>
-		<input type="datetime-local" id="eventEnd"></input></br>
-		<input type="text" id="guestList"></input></br>
-		<input type="adress" id="location"></input></br>
+	<div class="col-md-3 info">
+		<form autocomplete="on">
+			<input type="text" id="name" autocomplete="fname" autofocus></input></br>
+			<input type="email" id="email" autocomplete="email"></input></br>
+			<input type="password" id="password"></input></br>
+		</form>
+			<button class="forward"></button>
 	</div>
-	<div class="col-md-6 content">
-		<h1>Your Events</h1>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
-		</br>
+	<div class="col-md-3 event">
+		<label for="eventName">Event Name</label></br>
+		<label for="eventType">Event type</label></br>
+		<label for="eventStart">Start time</label></br>
+		<label for="eventEnd">End time</label></br>
+		<label for="guestList">Guests</label></br>
+		<label for="location">Location</label></br>
+	</div>
+	<div class="col-md-3 event">
+		<input type="text" id="eventName"></input></br>
+			<input list="eventType">
+			<datalist id="eventType">
+			  <option value="Party"></option>
+			  <option value="Meeting"></option>
+			  <option value="Birthday"></option>
+			  <option value="Casual"></option>
+			</datalist></br>
+			<input type="datetime-local" id="eventStart"></input></br>
+			<input type="datetime-local" id="eventEnd"></input></br>
+			<input type="text" id="guestList"></input></br>
+			<input type="adress" id="location"></input></br>
+	</div>
+		<button class="lastOne"></button>
+	<div data-bind="html: details" class="col-md-6 content">
+
 	</div>
 </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+
 </html>
