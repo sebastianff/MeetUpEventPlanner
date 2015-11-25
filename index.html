@@ -15,6 +15,15 @@
   		max-width: 500px;
   		max-height: 500px;
   	}
+  	label{
+  		float: left;
+  		clear: left;
+  	}
+
+  	input{
+  		float: right;
+  		clear: right;
+  	}
  	</style>
 </head>
 <body>
@@ -22,41 +31,33 @@
 <button class="showEvents btn-lg .btn-primary">See Active events</button>
 <div class="row">
 	<div class="col-md-3 info">
-		<label for="name">Name</label></br>
-		<label for="email">Email</label></br>
-		<label for="password">Password</label></br>
+
 	</form>
 	</div>
-	<div class="col-md-3 info">
+	<div class="col-md-12 info">
 		<form autocomplete="on">
-			<input type="text" id="name" autocomplete="fname" autofocus></input></br>
-			<input type="email" id="email" autocomplete="email"></input></br>
-			<input type="password" id="password"></input></br>
-		</form>
+			<label for="name">Name<input type="text" id="name" autocomplete="fname" autofocus></input></label></br>
+			<label for="email">Email<input type="email" id="email" autocomplete="email"></input></label></br>
+			<label for="password">Password<input type="password" id="password"></input></label></br>
+			</form>
 			<button class="forward btn-lg .btn-primary">Add event info</button>
 	</div>
-	<div class="col-md-3 event">
-		<label for="eventName">Event Name</label></br>
-		<label for="eventType">Event type</label></br>
-		<label for="eventStart">Start time</label></br>
-		<label for="eventEnd">End time</label></br>
-		<label for="guestList">Guests</label></br>
-		<label for="location">Location</label></br>
-	</div>
-	<div class="col-md-3 event">
-		<input type="text" id="eventName"></input></br>
-			<input list="eventType">
+	<div class="col-md-12 event">
+		<label for="eventName">Event Name<input type="text" id="eventName"></input></label></br>
+		<label for="eventType">Event type<input list="eventType">
 			<datalist id="eventType">
 			  <option value="Party"></option>
 			  <option value="Meeting"></option>
 			  <option value="Birthday"></option>
 			  <option value="Casual"></option>
-			</datalist></br>
-			<input type="datetime-local" id="eventStart"></input></br>
-			<input type="datetime-local" id="eventEnd"></input></br>
-			<input type="text" id="guestList"></input></br>
-			<input type="adress" id="location"></input></br>
-			<button class="lastOne btn-lg .btn-primary">Submit your event</button>
+			</datalist></label></br>
+		<label for="eventStart">Start time<input type="datetime-local" id="eventStart"></input></label></br>
+		<label for="eventEnd">End time<input type="datetime-local" id="eventEnd"></input></label></br>
+		<label for="guestList">Guests<input type="text" id="guestList"></input></label></br>
+		<label for="location">Location<input type="adress" id="location"></input></label></br>
+		<button class="lastOne btn-lg .btn-primary">Submit your event</button>
+	</div>
+	<div class="col-md-3 event">
 	</div>
 	<div class="col-md-12 eventTable">
 		<div class="okvir">
@@ -71,5 +72,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
 <script src="jquery.js"></script>
 <script src="script.js"></script>
-
 </html>
