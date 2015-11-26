@@ -31,18 +31,19 @@ var getInfo = function(){
 
 
 var displayChatMessage = function(name,email,eName,eType,start,evEnd,evLocation){
-	$('.eventTable').append('<div class="panel panel-default">\
-		<div class="col-md-6">\
-		<div class="panel-body">\
-		<h1>Name: '+name+'</h1>\
-		<p>Email: '+email+'</p>\
-		<p>Type of event: '+eName+'</p>\
-		<p>Event name: '+eType+'</p>\
-		<p>start time: '+start+'</p>\
-		<p>End time: '+evEnd+'</p>\
-		<p>Location: '+evLocation+'</p>\
-		</div>\
-		</div>\
+	$('.eventTable').append(
+			'<div class="col-md-6">\
+			<div class="panel panel-default">\
+			<div class="panel-body">\
+			<h1>Name: '+name+'</h1>\
+			<p>Email: '+email+'</p>\
+			<p>Type of event: '+eName+'</p>\
+			<p>Event name: '+eType+'</p>\
+			<p>start time: '+start+'</p>\
+			<p>End time: '+evEnd+'</p>\
+			<p>Location: '+evLocation+'</p>\
+			</div>\
+			</div>\
 		</div>'
 		)
 

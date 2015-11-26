@@ -41,8 +41,12 @@
 </head>
 <body>
 <div class="navbar navbar-default">
-	<button class="start btn-lg .btn-primary navbar-btn">Add an event</button>
-	<button class="showEvents btn-lg .btn-primary navbar-btn">See Active events</button>
+	<div class="text-center">
+		</span>
+			<button class="showEvents btn-lg navbar-btn">Show Events</button>
+			<button class="start btn-lg navbar-btn">Add an event</button>
+		</span>
+	</div>
 </div>
 <div class="row">
 	<div class="col-md-3 info">
@@ -51,15 +55,17 @@
 	</div>
 	<div class="col-md-12 info input-group-lg">
 		<form autocomplete="on">
-			<label for="name">Name</label>
-			<input type="text" id="name" autocomplete="fname" autofocus></input>
+			<div class="panel panel-default">
+				<label for="name">Name</label>
+				<input type="text" id="name" autocomplete="fname" autofocus></input>
 
-			<label for="email">Email</label>
-			<input type="email" id="email" autocomplete="email"></input>
-			<label for="password">Password</label>
-			<input type="password" id="password"></input>
-			</form>
-			<button class="forward btn-lg .btn-primary">Add event info</button>
+				<label for="email">Email</label>
+				<input type="email" id="email" autocomplete="email"></input>
+				<label for="password">Password</label>
+				<input type="password" id="password"></input>
+				</form>
+				<button class="forward btn-lg .btn-primary">Add event info</button>
+			</div>
 	</div>
 	<div class="col-md-12 event">
 		<label for="eventName">Event Name<input type="text" id="eventName"></input></label>
@@ -79,8 +85,6 @@
 	<div class="col-md-3 event">
 	</div>
 	<div class="col-md-12 eventTable">
-		<div class="okvir">
-		</div>
 	</div>
 
 	<div data-bind="html: details" class="col-md-6 content">
