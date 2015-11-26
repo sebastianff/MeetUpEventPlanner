@@ -10,7 +10,15 @@ var addInfo = function(){
 	var eventEnd = $('#eventEnd').val();
 	var evLocation = $('#location').val();
 
-	myDataRef.push({name:name,email:email,eventName:eventName,eventType:eventType,eventStart:eventStart,eventEnd:eventEnd,evLocation:evLocation});
+	myDataRef.push({
+		name:name,
+		email:email,
+		eventName:eventName,
+		eventType:eventType,
+		eventStart:eventStart,
+		eventEnd:eventEnd,
+		evLocation:evLocation
+	});
 }
 
 var getInfo = function(){
@@ -20,16 +28,21 @@ var getInfo = function(){
 	});
 }
 
+
+
 var displayChatMessage = function(name,email,eName,eType,start,evEnd,evLocation){
-	$('.eventTable').append(
-		'<div class="okvir">\
-		<h1>'+name+'</h1>\
-		<p>'+email+'</p>\
-		<p>'+eName+'</p>\
-		<p>'+eType+'</p>\
-		<p>'+start+'</p>\
-		<p>'+evEnd+'</p>\
-		<p>'+evLocation+'</p>\
+	$('.eventTable').append('<div class="panel panel-default">\
+		<div class="col-md-6">\
+		<div class="panel-body">\
+		<h1>Name: '+name+'</h1>\
+		<p>Email: '+email+'</p>\
+		<p>Type of event: '+eName+'</p>\
+		<p>Event name: '+eType+'</p>\
+		<p>start time: '+start+'</p>\
+		<p>End time: '+evEnd+'</p>\
+		<p>Location: '+evLocation+'</p>\
+		</div>\
+		</div>\
 		</div>'
 		)
 
@@ -65,7 +78,7 @@ $('.showEvents').click(function(){
 	getInfo();
 })
 
-
+getInfo();
 
 
 

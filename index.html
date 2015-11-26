@@ -14,6 +14,9 @@
 
   		max-width: 500px;
   		max-height: 500px;
+  		float: left;
+  		margin-right: 10px;
+  		margin-bottom:10px;
   	}
   	input,label{
   		display: block;
@@ -23,12 +26,24 @@
 		width: 500px;
   	}
 
+  	h1{
+  		color:green;
+  		border-bottom:3px solid black;
+  		padding: 5px;
+  	}
+
+  	p{
+  		padding: 5px;
+  	}
+
 
  	</style>
 </head>
 <body>
-<button class="start btn-lg .btn-primary">Add an event</button>
-<button class="showEvents btn-lg .btn-primary">See Active events</button>
+<div class="navbar navbar-default">
+	<button class="start btn-lg .btn-primary navbar-btn">Add an event</button>
+	<button class="showEvents btn-lg .btn-primary navbar-btn">See Active events</button>
+</div>
 <div class="row">
 	<div class="col-md-3 info">
 
