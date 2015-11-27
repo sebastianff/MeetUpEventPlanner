@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Eventapp</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
@@ -36,6 +36,10 @@
   		padding: 5px;
   	}
 
+  	input,label{
+  		margin-left:30px;
+  	}
+
 
  	</style>
 </head>
@@ -43,8 +47,9 @@
 <div class="navbar navbar-default">
 	<div class="text-center">
 		</span>
-			<button class="showEvents btn-lg navbar-btn">Show Events</button>
-			<button class="start btn-lg navbar-btn">Add an event</button>
+			<button class="showEvents btn-lg navbar-btn">Show Events <span class="glyphicon glyphicon-th"></span></button>
+			<button class="forward btn-lg navbar-btn">Add an event <span class="glyphicon glyphicon-plus"></span></button>
+			<button class="start btn-lg navbar-btn">Log in <span class="glyphicon glyphicon-user"></span></button>
 		</span>
 	</div>
 </div>
@@ -53,7 +58,7 @@
 
 	</form>
 	</div>
-	<div class="col-md-12 info input-group-lg">
+	<div class="col-md-6 info input-group-lg">
 		<form autocomplete="on">
 			<div class="panel panel-default">
 				<label for="name">Name</label>
