@@ -1,0 +1,31 @@
+body{
+  		font:30px Oswald;
+  	}
+
+  	input,label{
+  		display: block;
+  	}
+
+  	input[type=datetime-local], input{
+		width: 500px;
+  	}
+
+  	h1{
+  		color:green;
+  		border-bottom:3px solid black;
+  		padding: 5px;
+  	}
+
+  	p{
+  		padding: 5px;
+  	}
+
+  	input,label{
+  		width: 90%;
+  		margin:auto;
+  	}
+
+  	button{
+  		margin-bottom: 30px;
+  		margin-top: 15px;
+  	}
