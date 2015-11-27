@@ -18,16 +18,17 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-3 info">
+
 
 	</form>
 	</div>
-	<div class="col-md-6 info input-group-lg">
+	<div class="col-md-6 col-md-offset-3 info input-group-lg">
 		<form autocomplete="on">
 			<div class="panel panel-default">
-				<label for="name">Name</label>
+				<h1>Please sign in with your info:</h1>
+				<label for="name">Full Name</label>
 				<input type="text" id="name" autocomplete="fname" autofocus></input>
-				<label for="email">Email</label>
+				<label for="email">Your email</label>
 				<input type="email" id="email" autocomplete="email"></input>
 				<label for="password">Password</label>
 				<input type="password" id="password"></input>
@@ -39,22 +40,32 @@
 				</div>
 			</div>
 	</div>
-	<div class="col-md-12 event">
-		<label for="eventName">Event Name<input type="text" id="eventName"></input></label>
-		<label for="eventType">Event type<input list="eventType">
-			<datalist id="eventType">
-			  <option value="Party"></option>
-			  <option value="Meeting"></option>
-			  <option value="Birthday"></option>
-			  <option value="Casual"></option>
-			</datalist></label>
-		<label for="eventStart">Start time<input type="datetime-local" id="eventStart"></input></label>
-		<label for="eventEnd">End time<input type="datetime-local" id="eventEnd"></input></label>
-		<label for="guestList">Guests<input type="text" id="guestList"></input></label>
-		<label for="location">Location<input type="adress" id="location"></input></label>
-		<button class="lastOne btn-lg .btn-primary">Submit your event</button>
-	</div>
-	<div class="col-md-3 event">
+	<div class="col-md-6 col-md-offset-3 event">
+		<div class="panel panel-default">
+			<label for="eventName">Event Name</input></label>
+			<input type="text" id="eventName">
+			<label for="eventType">Event type</label>
+			<input list="eventType">
+				<datalist id="eventType">
+				  <option value="Party"></option>
+				  <option value="Meeting"></option>
+				  <option value="Birthday"></option>
+				  <option value="Casual"></option>
+				</datalist>
+			<label for="eventStart">Start time</label>
+			<input type="datetime-local" id="eventStart"></input>
+			<label for="eventEnd">End time</label>
+			<input type="datetime-local" id="eventEnd"></input>
+			<label for="guestList">Guests</label>
+			<input type="text" id="guestList"></input>
+			<label for="location">Location</label>
+			<input type="adress" id="location"></input>
+			<div class="text-center">
+			<span>
+			<button class="lastOne btn-lg .btn-primary">Submit your event</button>
+			</span>
+			</div>
+		</div>
 	</div>
 	<div class="col-md-12 eventTable">
 	</div>
