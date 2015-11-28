@@ -6,9 +6,7 @@ body{
   		display: block;
   	}
 
-  	input[type=datetime-local], input{
-		width: 500px;
-  	}
+
 
   	h1{
   		color:green;
