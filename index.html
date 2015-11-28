@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>Eventapp</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-  	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="navbar navbar-default">
@@ -18,11 +18,9 @@
 	</div>
 </div>
 <div class="row">
-
-
 	</form>
 	</div>
-	<div class="col-md-6 col-md-offset-3 info input-group-lg">
+	<div class="col-md-6 col-md-offset-3 firstForm input-group-lg">
 		<form autocomplete="on">
 			<div class="panel panel-default">
 				<h1>Please sign in with your info:</h1>
@@ -34,13 +32,13 @@
 				<input type="password" id="password"></input>
 		</form>
 				<div class="text-center">
-				<span>
-				<button class="forward btn-lg .btn-primary">Log in</button>
-				</span>
+					<span>
+						<button class="forward btn-lg btn-primary">Log in</button>
+					</span>
 				</div>
 			</div>
 	</div>
-	<div class="col-md-5 col-md-offset-3 event">
+	<div class="col-md-6 col-md-offset-3 secondForm">
 		<div class="panel panel-default">
 			<label for="eventType">Event type</label>
 			<input list="eventType">
@@ -79,3 +77,4 @@
 <script src="jquery.js"></script>
 <script src="script.js"></script>
 </html>
+
