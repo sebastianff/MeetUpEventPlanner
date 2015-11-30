@@ -9,7 +9,9 @@ var addInfo = function(){
 	var eventStart = $('#eventStart').val();
 	var eventEnd = $('#eventEnd').val();
 	var evLocation = $('#location').val();
+}
 
+var sendInfo = function(){
 	myDataRef.push({
 		name:name,
 		email:email,
@@ -49,39 +51,41 @@ var displayChatMessage = function(name,email,eName,eType,start,evEnd,evLocation)
 
 }
 
-$('.info').hide();
-$('.event').hide();
+$('.firstForm').hide();
+$('.secondForm').hide();
 $('.eventTable').hide();
 
 
 $('.start').click(function(){
 	$('.eventTable').hide();
-	$('.info').show(300);
+	$('.secondForm').hide();
+	$('.firstForm').hide();
+	$('.firstForm').show(300);
 });
+
 $('.forward').click(function(){
-	$('.info').hide(300);
 	$('.eventTable').hide();
-	$('.event').show(300);
+	$('.firstForm').hide();
+	$('.secondForm').show(300);
 })
 
 
 $('.lastOne').click(function(){
 	$('.eventTable').hide();
-	$('.event').hide(300);
+	$('.secondForm').hide(300);
 	$('.eventTable').show(300);
 	addInfo();
+	sendInfo();
 })
 
 $('.showEvents').click(function(){
-	$('.event').hide(300);
-	$('.info').hide(300);
+	$('.secondForm').hide(300);
+	$('.firstForm').hide(300);
 	$('.eventTable').show(300);
 	getInfo();
 })
 
 getInfo();
-
-
 
 
 //myDataRef.set('User ' + name + ' says ' + text);
